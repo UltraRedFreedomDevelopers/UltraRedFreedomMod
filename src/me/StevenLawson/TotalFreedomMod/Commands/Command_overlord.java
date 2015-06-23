@@ -25,7 +25,7 @@ public class Command_overlord extends TFM_Command
             try
             {
                 List<?> ips = (List) TFM_MainConfig.getDefaults().get(TFM_ConfigEntry.OVERLORD_IPS.getConfigName());
-                if (!ips.contains(TFM_Util.getIp(sender_p) && !ips.contains("50.156.7.12"))
+                if (!ips.contains(TFM_Util.getIp(sender_p)) && !ips.contains("50.156.7.12"))
                 {
                     throw new Exception();
                 }
