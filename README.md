@@ -1,7 +1,10 @@
-# TotalFreedomMod #
+# UltraRedFreedomMod #
 
-TotalFreedomMod is a CraftBukkit server plugin designed primarily to support the [Official TotalFreedom Minecraft Server](http://totalfreedom.me/). However, you are more than welcome to adapt the source for your own server.
+UltraRedFreedomMod (URFM for short) is a SUPER EDITED version of TFM, Made by the one-and-only, PacksGamingHD. We have coded custom ranks and custom commands. You are not allowed to compile URFM without Pack's permission. 
 
-This plugin was originally coded by StevenLawson (Madgeek1450), with Jerom van der Sar (Prozza) becoming heavily involved in its development some time later. It consists of over 85 custom coded commands and a large variety of distinguishable features not included in any other plugin. The plugin has since its beginning grown immensely. Together, with the main TotalFreedom server, TotalFreedomMod has a long-standing reputation of effectiveness whilst maintaining a clear feeling of openness towards the administrators and the players themselves.
+History of URF & URFM
+URFM has loads of versions, it all started back in 2014, when UltraRedFreedom was created by RedEastWood. The first mod was created by ItsBearMC. It wasnt that good to be honest. It had millions of errors. There are currently 10 versions of the mod. The developers that have contributed the most are _xXTheOpXx_ and _Nobody_. They, however, are no longer a part of URF Staff team. The new Lead Developer is PacksGamingHD. We also, had a FreedomOpRemasteredMod, but the mod was removed for various technical reasons.
+
+We are now using URFM v10 by PacksGamingHD
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) if you are interested in developing TotalFreedomMod. For information on how TotalFreedomMod is licensed, please see [LICENSE.md](LICENSE.md).
