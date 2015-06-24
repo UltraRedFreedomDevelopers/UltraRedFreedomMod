@@ -1,6 +1,6 @@
 name: UltraRedFreedomMod Remastered
 main: me.StevenLawson.TotalFreedomMod.TotalFreedomMod
-version: 4.3
+version: 3.6
 description: Plugin for the Total Freedom server.
 softdepend: [BukkitTelnet, WorldEdit, Essentials]
 authors: [Madgeek1450, Prozza, PacksGamingHD]

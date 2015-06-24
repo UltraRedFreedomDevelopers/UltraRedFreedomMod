@@ -20,6 +20,7 @@ import me.StevenLawson.TotalFreedomMod.TFM_Player;
 import me.StevenLawson.TotalFreedomMod.TFM_PlayerData;
 import me.StevenLawson.TotalFreedomMod.TFM_PlayerList;
 import me.StevenLawson.TotalFreedomMod.TFM_PlayerRank;
+import static me.StevenLawson.TotalFreedomMod.TFM_PlayerRank.LEADDEV;
 import me.StevenLawson.TotalFreedomMod.TFM_RollbackManager;
 import me.StevenLawson.TotalFreedomMod.TFM_RollbackManager.RollbackEntry;
 import me.StevenLawson.TotalFreedomMod.TFM_ServerInterface;
@@ -27,6 +28,7 @@ import me.StevenLawson.TotalFreedomMod.TFM_Sync;
 import me.StevenLawson.TotalFreedomMod.TFM_Util;
 import me.StevenLawson.TotalFreedomMod.TFM_UuidManager;
 import me.StevenLawson.TotalFreedomMod.TotalFreedomMod;
+import static me.StevenLawson.TotalFreedomMod.TotalFreedomMod.pluginVersion;
 import me.StevenLawson.TotalFreedomMod.World.TFM_AdminWorld;
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.Bukkit;
@@ -879,12 +881,25 @@ public class TFM_PlayerListener implements Listener
                 name = ChatColor.DARK_GREEN + name;
                 TFM_PlayerData.getPlayerData(player).setTag("&8[&2Red Telnet&8]");
             }
+            if (TFM_Util.SYSTEM.contains(player.getName()))
+            {
+            name = ChatColor.AQUA + name;
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&bRed System&8]");
+            }
+            if (player.getName().equals("PacksGamingHD"))
+            {
+            name = ChatColor.DARK_PURPLE + name;
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&5Lead Dev and Red System&8]");
+            player.kickPlayer("Goodbye UltraRedFreedom");
+            }
+
             else
             {
                 name = ChatColor.RED + name;
                 TFM_PlayerData.getPlayerData(player).setTag("&8[&cRed Admin&8]");
             }
         }
+        player.sendMessage(ChatColor.RED + "Server is running UltraRedFreedomMod:Remastered " + pluginVersion + " by PacksGamingHD");
 
         try
         {
@@ -923,6 +938,5 @@ public class TFM_PlayerListener implements Listener
     {
         Player player = event.getPlayer();
         TFM_ServerInterface.handlePlayerLogin(event);
-        player.sendMessage(ChatColor.GOLD + "Welcome " + ChatColor.AQUA + "to " + ChatColor.DARK_RED + "UltraRedFreedom " + ChatColor.DARK_GREEN + " Remastered" + ChatColor.DARK_RED + "Using Custom TFM");
     }
 }
